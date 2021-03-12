@@ -1,0 +1,703 @@
+height = 1000.0
+print_layout = true
+svg_id = "radar"
+title = "Blameless Tech Radar — 2020.12"
+width = 1450.0
+
+[colors]
+  background = "#fff"
+  grid = "#bbb"
+  inactive = "#ddd"
+
+[[quadrants]]
+  name = "Code"
+
+[[quadrants]]
+  name = "Data"
+
+[[quadrants]]
+  name = "Platform"
+
+[[quadrants]]
+  name = "Tool"
+
+[[rings]]
+  color = "#93c47d"
+  name = "ADOPT"
+
+[[rings]]
+  color = "#93d2c2"
+  name = "TRIAL"
+
+[[rings]]
+  color = "#fbdb84"
+  name = "ASSESS"
+
+[[rings]]
+  color = "#efafa9"
+  name = "HOLD"
+
+[[entries]]
+  active = true
+  label = "Snyk"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "MySQL"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Sentinel"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "Salesforce"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Enzyme"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Storybook"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Confluence"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Auth0"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Jest"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "NodeJS"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Webpack"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "AWS EFS"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "GCP Cloud Filestore"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "PostgreSQL"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "React Testing Lib"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Sentry"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Pipenv"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "RabbitMQ"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "Redis"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 1.0
+
+[[entries]]
+  active = true
+  label = "CodeCov"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Prettier"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Material-UI"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "GCP BigTable"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 1.0
+
+[[entries]]
+  active = true
+  label = "ESLint"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Security / Identity"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Golang"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Terraform"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Alien Vault"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "PagerDuty"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Kafka"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 2.0
+
+[[entries]]
+  active = true
+  label = "SOPS"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Packer"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "React Redux"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Prometheus"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "AWS"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "Keybase"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "ELK for AWS"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "GCP"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Sendgrid"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Yarn"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Grafana"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "MongoDB (Atlas)"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "GCP Stackdriver"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "CircleCI"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Terraform Cloud"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "Okta"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "gRPC"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Docker"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Confluent Cloud"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 2.0
+
+[[entries]]
+  active = true
+  label = "Cypress"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Helm"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Nameko"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "Slack"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "NGINX Ingress"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Rollup"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "AWS S3"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "Pendo"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Zoom"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "TypeScript"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Apollo GraphQL"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "GCS"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Humio"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 2.0
+
+[[entries]]
+  active = true
+  label = "LaunchDarkly"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "1Password"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "Python 3"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "Shell (*sh)"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Vault"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "Dead Man's Snitch"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Kubernetes"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "NPM"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "FullStory"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Github"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "GKS"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "ngrok"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Cert Manager"
+  link = "."
+  moved = 0.0
+  quadrant = 0.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "GCP PubSub"
+  link = "."
+  moved = 0.0
+  quadrant = 1.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "GSuite"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Rookout"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "AWS EKS"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 3.0
+
+[[entries]]
+  active = true
+  label = "SumoLogic"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 2.0
+
+[[entries]]
+  active = true
+  label = "Jira"
+  link = "."
+  moved = 0.0
+  quadrant = 2.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Flow"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 0.0
+
+[[entries]]
+  active = true
+  label = "Twistlock"
+  link = "."
+  moved = 0.0
+  quadrant = 3.0
+  ring = 3.0
+
