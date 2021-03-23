@@ -1,0 +1,41 @@
+#                     _|            _|
+# _|  _|_|    _|_|_|      _|_|_|    _|_|_|      _|_|    _|      _|      _|    _|_|_|
+# _|_|      _|    _|  _|  _|    _|  _|    _|  _|    _|  _|      _|      _|  _|    _|
+# _|        _|    _|  _|  _|    _|  _|    _|  _|    _|    _|  _|  _|  _|    _|    _|
+# _|          _|_|_|  _|  _|    _|  _|_|_|      _|_|        _|      _|        _|_|_|
+#                                                                                 _|
+#                                                                                 _|
+
+# Meta
+[meta]
+lastedit.dt = 2021-03-23T07:00:00Z
+lastedit.user = 'maroda@rainbowq.io'
+
+# Blameless Corp
+[blameless]
+gcp.project.id = 'blameless-xxxxxxx'
+aws.account.id = 'xxxxxxxxxxx'
+
+# Infrastructure
+[infra.sme]
+chaos = 'matt@blameless.com'
+kafka = 'matt@blameless.com'
+kubernetes = 'darrell@blameless.com'
+slo = 'afif@blameless.com'
+snyk = 'geoffw@blameless.com'
+sre = 'darrell@blameless.com'
+sumologic = 'matt@blameless.com'
+terraform = 'matt@blameless.com'
+
+# Production Engineering Group
+[peg]
+vcs.provider = 'github'
+vcs.repo = 'https://github.com/blamelesshq/peg'
+terraform.version = 'v0.14.0'
+techscope.radar = 'techscope.blamelessaws.io:8000/radar/'
+
+# Salt Masterless Minion tools
+[peg.salt]
+state.apply = 'salt-minion --local state.apply'
+tree.sync = 'aws s3 sync --delete s3://salt-tree-prod.blamelessaws.io /srv/salt'
+pillar.sync = 'aws s3 sync --delete s3://salt-pillar-prod.blamelessaws.io /srv/pillar'
