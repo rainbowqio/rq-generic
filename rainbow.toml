@@ -7,13 +7,17 @@
 #                                                                                 _|
 
 # Meta
-[meta]
-lastedit.dt = 2021-03-23T15:00:00Z
-lastedit.user = 'maroda@rainbowq.io'
+[meta.last]
+dt = 2021-03-30T22:00:00Z
+editor = 'maroda@rainbowq.io'
 
-# Blameless Corp
-[blameless]
-gcp.project.id = 'blameless-185322'
+# Blameless GCP
+[blameless.gcp]
+project = 'blameless-185322'
+editor = 'matt@blameless.com'
+
+[blameless.aws]
+account = '696025759092'
 
 # Infrastructure
 [infra.sme]
@@ -27,15 +31,16 @@ sumologic = 'matt@blameless.com'
 terraform = 'matt@blameless.com'
 
 # Production Engineering Group
-[peg]
-bastion.os = 'centos-7-v20210217'
-terraform.version = 'v0.14.0'
-techscope.radar = 'techscope.blamelessaws.io:8000/radar/'
-vcs.provider = 'github'
-vcs.repo = 'https://github.com/blamelesshq/peg'
+[peg.bastion]
+os = 'centos-7-v20210217'
+image = 'beki'
+
+[peg.techscope]
+radar = 'techscope.blamelessaws.io:8000/radar/'
 
 # Salt Masterless Minion tools
 [peg.salt]
-state.apply = 'salt-minion --local state.apply'
-tree.sync = 'aws s3 sync --delete s3://salt-tree-prod.blamelessaws.io /srv/salt'
-pillar.sync = 'aws s3 sync --delete s3://salt-pillar-prod.blamelessaws.io /srv/pillar'
+states = 's3://salt-tree-prod.blamelessaws.io'
+pillar = 's3://salt-pillar-prod.blamelessaws.io'
+apply = 'salt-minion --local state.apply'
+sync = 'aws s3 sync --delete s3://salt-tree-prod.blamelessaws.io /srv/salt && aws s3 sync --delete s3://salt-pillar-prod.blamelessaws.io /srv/pillar'
