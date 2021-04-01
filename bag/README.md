@@ -9,16 +9,12 @@ Download:
 Process:
 
 ```shell
-yq e '.workflows.test_and_deploy.jobs.[] | keys' customertry.yaml | \
-awk 'BEGIN {print "[blameless.deploy.instance]"} {printf "%s = true\n", $2}' > deployjobs.toml
+yq e '.workflows.test_and_deploy.jobs.[] | keys' customertry.yaml | awk 'BEGIN {print "[blameless.deploy.instance]"} {printf "%s = true\n", $2}' > deployjobs.toml
 ```
 
-The result is a new Almanac with each deployed instance marked as 'true'. This will allow the user to find the presence of a customer:
+This one is better:
+
 
 ```shell
-qio ask blameless.deploy.instance hashicorp
-blameless.deploy.instance.hashicorp ::: %!s(bool=true)
+yq e '.jobs.[].environment.INSTANCE_VALUES_DIR' customertry.yaml | awk -F'_' 'BEGIN {print "[blameless.prod.instance]"} /prod/{print $3" = \""$1"_"$2"\""}' > prodinstance.toml
 ```
-
-Or list all customers (messy right now, raw map output): `qio ask blameless.deploy instance`
-
