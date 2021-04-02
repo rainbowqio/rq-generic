@@ -1,0 +1,46 @@
+#                     _|            _|
+# _|  _|_|    _|_|_|      _|_|_|    _|_|_|      _|_|    _|      _|      _|    _|_|_|
+# _|_|      _|    _|  _|  _|    _|  _|    _|  _|    _|  _|      _|      _|  _|    _|
+# _|        _|    _|  _|  _|    _|  _|    _|  _|    _|    _|  _|  _|  _|    _|    _|
+# _|          _|_|_|  _|  _|    _|  _|_|_|      _|_|        _|      _|        _|_|_|
+#                                                                                 _|
+#                                                                                 _|
+
+# Meta
+[meta.last]
+dt = 2021-03-30T22:00:00Z
+editor = 'maroda@rainbowq.io'
+
+# Blameless GCP
+[blameless.gcp]
+project = 'blameless-185322'
+editor = 'matt@blameless.com'
+
+[blameless.aws]
+account = '696025759092'
+
+# Infrastructure
+[infra.sme]
+chaos = 'matt@blameless.com'
+kafka = 'matt@blameless.com'
+kubernetes = 'darrell@blameless.com'
+slo = 'afif@blameless.com'
+snyk = 'geoffw@blameless.com'
+sre = 'darrell@blameless.com'
+sumologic = 'matt@blameless.com'
+terraform = 'matt@blameless.com'
+
+# Production Engineering Group
+[peg.bastion]
+os = 'centos-7-v20210217'
+image = 'beki'
+
+[peg.techscope]
+radar = 'techscope.blamelessaws.io:8000/radar/'
+
+# Salt Masterless Minion tools
+[peg.salt]
+states = 's3://salt-tree-prod.blamelessaws.io'
+pillar = 's3://salt-pillar-prod.blamelessaws.io'
+apply = 'salt-minion --local state.apply'
+sync = 'aws s3 sync --delete s3://salt-tree-prod.blamelessaws.io /srv/salt && aws s3 sync --delete s3://salt-pillar-prod.blamelessaws.io /srv/pillar'
