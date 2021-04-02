@@ -1,5 +1,35 @@
 # RainbowQ: A Resource Advisor
 
+## ETL: Build rainbow.toml
+
+1. `export GH_TOKEN=<personal access token>`
+2. `./etl.sh`
+3. Commit the new `rainbow.toml` data file.
+
+## Usage
+
+If you have access to the rainbowq releases.
+
+1. `go get github.com/rainbowq/qio` OR download binary
+2. `qio list` will create a new database
+3. `cd $HOME/.config/qio/`
+4. `rm rainbow.toml`
+5. `ln -s <PATH_TO>/rainbowq/rq-blameless/rainbow.toml`
+6. `qio list` will now show the newly installed rainbow
+
+## Container Deployment
+
+### Local
+
+1. Follow the ETL steps above
+2. docker build .
+
+### Deployment
+
+_COMING SOON_: This repo will connect to a build pipeline that constructs the docker image with the QIO binary (available via the same token, only using a tag/release) and uploads it to a registry.
+
+## About RainbowQ
+
 Part of having Observability is knowing where to find it.
 
 One result of deeper dives into the network, security, integration, and identity infrastructures at Blameless is that there are multiplicative ways to find answers without any good way to get to the entry points. There is a real need for a data system that is a practical bibliography and global semaphore, curated and customized to the organization and needs of the people asking questions across every cloudy area of the business.
