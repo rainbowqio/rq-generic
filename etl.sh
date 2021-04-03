@@ -22,24 +22,29 @@
 #
 #   5. qio should not 'control' any ETL of data itself, its job is to pull a set of configurations that is ready to go.
 #   6. so it's actually the rq-* repo that contains the Dockerfile that is going to package up the company data alongside qio in a container.
-
-OWNER='blamelesshq'
-REPO='blameless-deploy'
-PATH='.circleci/config.yml'
-GH_API="https://api.github.com"
-GH_REPO="$GH_API/repos/$OWNER/$REPO/contents/$PATH"
-AUTH="Authorization: token $GH_TOKEN"
-CONTENT="application/vnd.github.v3.raw"
-CURL_ARGS="-LJO#"
+set -e
 
 AWK="/usr/bin/awk"
 CURL="/usr/bin/curl"
 YQ="/usr/local/bin/yq"
 
+# GitHub File Details
+OWNER='blamelesshq'
+REPO='blameless-deploy'
+PATH='.circleci/config.yml'
+
+# API Call
+GH_API="https://api.github.com"
+GH_REPO="$GH_API/repos/$OWNER/$REPO/contents/$PATH"
+AUTH="Authorization: token $GH_TOKEN"
+CONTENT="application/vnd.github.v3.raw"
+
 # Validate Token
-$CURL -o /dev/null -sH "$AUTH" $GH_REPO || { echo "ERROR: Invalid repo, bad token, network issue?";  exit 1; }
+[[ $GH_TOKEN ]] || print "ERROR: GH_TOKEN required." >&2; exit 1
+$CURL -o /dev/null -sH "$AUTH" $GH_REPO || print "ERROR: Connection verification unsuccessful. Please check for valid repo, token, and network.";  exit 1
 
 # Download Raw File
+# CURL_ARGS="-LJO#"
 # $CURL $CURL_ARGS -H "$AUTH" -H "Accept: $CONTENT" "$GH_REPO"
 
 # Fill Template

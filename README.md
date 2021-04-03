@@ -1,6 +1,12 @@
 # RainbowQ: A Resource Advisor
 
-## ETL: Build rainbow.toml
+## Adding Data
+
+### Manual Edits: prefetch.toml
+
+To make manual additions or changes, edit `prefetch.toml`. The ETL script uses this as its source for constructing the rainbow.
+
+### ETL: Build rainbow.toml
 
 1. `export GH_TOKEN=<personal access token>`
 2. `./etl.sh`
