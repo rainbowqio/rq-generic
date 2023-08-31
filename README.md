@@ -14,7 +14,7 @@ If you have access to the rainbowq releases.
 2. `qio list` will create a new database
 3. `cd $HOME/.config/qio/`
 4. `rm rainbow.toml`
-5. `ln -s <PATH_TO>/rainbowq/rq-blameless/rainbow.toml`
+5. `ln -s <PATH_TO>/rainbowq/rq/rainbow.toml`
 6. `qio list` will now show the newly installed rainbow
 
 ## Container Deployment
@@ -32,7 +32,7 @@ _COMING SOON_: This repo will connect to a build pipeline that constructs the do
 
 Part of having Observability is knowing where to find it.
 
-One result of deeper dives into the network, security, integration, and identity infrastructures at Blameless is that there are multiplicative ways to find answers without any good way to get to the entry points. There is a real need for a data system that is a practical bibliography and global semaphore, curated and customized to the organization and needs of the people asking questions across every cloudy area of the business.
+One result of deeper dives into the network, security, integration, and identity infrastructures is that there are multiplicative ways to find answers without any good way to get to the entry points. There is a real need for a data system that is a practical bibliography and global semaphore, curated and customized to the organization and needs of the people asking questions across every cloudy area of the business.
 
 We are all familiar with these questions...
 

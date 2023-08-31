@@ -11,24 +11,20 @@
 dt = 2021-03-30T22:00:00Z
 editor = 'maroda@rainbowq.io'
 
-# Blameless GCP
-[blameless.gcp]
-project = 'blameless-185322'
-editor = 'matt@blameless.com'
+# Org GCP
+[org.gcp]
+project = 'org-185322'
+editor = 'maroda@rainbowq.io'
 
-[blameless.aws]
+[org.aws]
 account = '696025759092'
 
 # Infrastructure
 [infra.sme]
-chaos = 'matt@blameless.com'
-kafka = 'matt@blameless.com'
-kubernetes = 'darrell@blameless.com'
-slo = 'afif@blameless.com'
-snyk = 'geoffw@blameless.com'
-sre = 'darrell@blameless.com'
-sumologic = 'matt@blameless.com'
-terraform = 'matt@blameless.com'
+chaos = 'maroda@rainbowq.io'
+kafka = 'maroda@rainbowq.io'
+sumologic = 'maroda@rainbowq.io'
+terraform = 'maroda@rainbowq.io'
 
 # Production Engineering Group
 [peg.bastion]
@@ -36,100 +32,21 @@ os = 'centos-7-v20210217'
 image = 'beki'
 
 [peg.techscope]
-radar = 'techscope.blamelessaws.io:8000/radar/'
+radar = 'techscope.aws.io:8000/radar/'
 
 # Salt Masterless Minion tools
 [peg.salt]
-states = 's3://salt-tree-prod.blamelessaws.io'
-pillar = 's3://salt-pillar-prod.blamelessaws.io'
+states = 's3://salt-tree-prod.aws.io'
+pillar = 's3://salt-pillar-prod.aws.io'
 apply = 'salt-minion --local state.apply'
-sync = 'aws s3 sync --delete s3://salt-tree-prod.blamelessaws.io /srv/salt && aws s3 sync --delete s3://salt-pillar-prod.blamelessaws.io /srv/pillar'
+sync = 'aws s3 sync --delete s3://salt-tree-prod.aws.io /srv/salt && aws s3 sync --delete s3://salt-pillar-prod.aws.io /srv/pillar'
 
-# Blameless Deployed Instances
-[blameless.prod.instance]
-blameless = "gke_prod-us-central1-private-multitenant"
-blamelesscre = "gke_prod-us-central1-private-multitenant"
-blamelesstrial = "gke_prod-us-central1-private-c"
-checkr = "gke_prod-us-central1-private-multitenant"
-iterable = "gke_prod-us-central1-private-multitenant"
-masterclass = "gke_prod-us-central1-private-multitenant"
-packet = "gke_prod-us-central1-private-multitenant"
-procore = "gke_prod-us-central1-private-multitenant"
-platform9 = "gke_prod-us-central1-private-multitenant"
-tenable = "gke_prod-us-central1-private-singletenant"
-homedepot = "gke_prod-us-central1-private-multitenant"
-fox = "gke_prod-us-central1-private-multitenant"
-eventbrite = "gke_prod-us-central1-private-multitenant"
-underarmour = "gke_prod-us-central1-private-multitenant"
-datarobot = "gke_prod-us-central1-private-multitenant"
-mambu = "gke_prod-us-central1-private-multitenant"
+# Deployed Instances
+[org.prod.instance]
 addepar = "gke_prod-us-central1-private-c"
-postmates = "gke_prod-us-central1-private-multitenant"
 earnin = "gke_prod-us-central1-private-c"
 flywire = "gke_prod-europe-west4-private-a"
 demo = "gke_prod-us-central1-private-c"
-acs = "eks_prod-us-west-2-private-multitenant"
-labelbox = "gke_prod-us-central1-private-multitenant"
-missionlane = "eks_prod-us-west-2-private-multitenant"
-citrix = "eks_prod-us-east-2-private-multitenant"
-mercari-sandbox = "eks_prod-ap-northeast-1-private-multitenant"
 mercari = "eks_prod-ap-northeast-1-private-mt"
-vital = "eks_prod-ap-northeast-1-private-mt"
 gojek = "eks_prod-ap-northeast-1-private-mt"
-greenlight = "eks_prod-us-east-2-private-multitenant"
-gremlin = "gke_prod-us-central1-private-multitenant"
-zapier = "gke_prod-us-central1-private-multitenant"
-inloco = "gke_prod-us-central1-private-multitenant"
-cruise = "gke_prod-us-central1-private-multitenant"
-mux = "gke_prod-us-central1-private-multitenant"
-flatiron = "gke_prod-us-central1-private-a"
 ticketmaster = "gke_prod-us-central1-private-a"
-hashicorp = "gke_prod-us-central1-private-a"
-revops = "gke_prod-us-central1-private-a"
-zoopla = "gke_prod-us-central1-private-a"
-fast = "gke_prod-us-central1-private-a"
-hitachisolutions = "gke_prod-us-central1-private-a"
-crowdstrike = "gke_prod-us-central1-private-b"
-markley = "gke_prod-us-central1-private-b"
-paymentsense = "gke_prod-us-central1-private-b"
-cultureamp = "gke_prod-us-central1-private-b"
-marqeta = "gke_prod-us-central1-private-b"
-twitch = "gke_prod-us-central1-private-b"
-lntinfotech = "gke_prod-us-central1-private-b"
-petalcard = "gke_prod-us-central1-private-b"
-paloaltonetworks = "gke_prod-us-central1-private-b"
-bandwidth = "gke_prod-us-central1-private-b"
-stitchfix = "gke_prod-us-central1-private-b"
-stubhub = "gke_prod-us-central1-private-b"
-appsflyer = "gke_prod-us-central1-private-b"
-intercom = "gke_prod-us-central1-private-b"
-afterpay = "gke_prod-us-central1-private-b"
-dremio = "gke_prod-us-central1-private-b"
-caffeine = "gke_prod-us-central1-private-b"
-alpha-sense = "gke_prod-us-central1-private-b"
-ytel = "gke_prod-us-central1-private-b"
-aiven = "gke_prod-us-central1-private-b"
-jupiterone = "gke_prod-us-central1-private-b"
-sadapay = "gke_prod-us-central1-private-b"
-glovoapp = "gke_prod-us-central1-private-b"
-qonto = "gke_prod-us-central1-private-b"
-belcorp = "gke_prod-us-central1-private-b"
-color = "gke_prod-us-central1-private-b"
-adarga = "gke_prod-us-central1-private-b"
-smartthings = "gke_prod-us-central1-private-b"
-rainbowq = "gke_prod-us-central1-private-b"
-myfitnesspal = "gke_prod-us-central1-private-b"
-benevity = "gke_prod-us-central1-private-b"
-agero = "gke_prod-us-central1-private-b"
-newrelic = "gke_prod-us-central1-private-b"
-sezzle = "gke_prod-us-central1-private-b"
-zeotap = "gke_prod-us-central1-private-b"
-flymachine = "gke_prod-us-central1-private-b"
-coxautoinc = "gke_prod-us-central1-private-b"
-cisco = "gke_prod-us-central1-private-b"
-nvidia = "gke_prod-us-central1-private-b"
-delixus = "gke_prod-us-central1-private-b"
-vmware = "gke_prod-us-central1-private-c"
-productboard = "gke_prod-us-central1-private-c"
-europe-test = "gke_prod-europe-west4-private-a"
-asia-test = "gke_prod-asia-northeast1-private-a"
