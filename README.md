@@ -1,32 +1,26 @@
-# RainbowQ: A Resource Advisor
+# RainbowQ Almanac Schema
 
-## ETL: Build rainbow.toml
+Data structure for [RainbowQ](https://github.com/rainbowqio/qio) Almanacs.
+
+## Usage
+
+1. `go get github.com/rainbowq/qio` if you have a Golang environment
+2. `docker pull rainbowq/qio` to run as a container
+3. `qio list` will create a new database
+4. `cd $HOME/.config/qio/`
+5. `rm rainbow.toml`
+6. `ln -s <PATH_TO>/rainbow.toml` (i.e. this directory)
+7. `qio list` will now show the newly installed rainbow
+
+You may also want to make a copy and place that in `$HOME/.config/qio/` so you won't clobber it on a code refresh.
+
+## ETL example
+
+This example shows how the included shell script could be used to download data from a Github repo and perform some munging on it.
 
 1. `export GH_TOKEN=<personal access token>`
 2. `./etl.sh`
 3. Commit the new `rainbow.toml` data file.
-
-## Usage
-
-If you have access to the rainbowq releases.
-
-1. `go get github.com/rainbowq/qio` OR download binary
-2. `qio list` will create a new database
-3. `cd $HOME/.config/qio/`
-4. `rm rainbow.toml`
-5. `ln -s <PATH_TO>/rainbowq/rq/rainbow.toml`
-6. `qio list` will now show the newly installed rainbow
-
-## Container Deployment
-
-### Local
-
-1. Follow the ETL steps above
-2. docker build .
-
-### Deployment
-
-_COMING SOON_: This repo will connect to a build pipeline that constructs the docker image with the QIO binary (available via the same token, only using a tag/release) and uploads it to a registry.
 
 ## About RainbowQ
 
@@ -36,13 +30,13 @@ One result of deeper dives into the network, security, integration, and identity
 
 We are all familiar with these questions...
 
-  What customers are in Tier-1?
-  Which helm-vars are we using for <deployment>?
-  Which cluster is <customer> in?
-  What user accounts have access to Bastions?
-  Where do I see the logs for Jira errors?
-  Where can I see Auth0 reported errors?
-  Who is on-call right now?
+- What customers are in Tier-1?
+- Which helm-vars are we using for <deployment>?
+- Which cluster is <customer> in?
+- What user accounts have access to Bastions?
+- Where do I see the logs for Jira errors?
+- Where can I see Auth0 reported errors?
+- Who is on-call right now?
 
 **RainbowQ** is this source of _truths_.
 
